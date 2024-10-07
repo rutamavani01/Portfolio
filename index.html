@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
 
-  <link rel="stylesheet" href="css/all.min.css">
-  <!-- fonts-->
-  <link rel="stylesheet" href="css/montserrat-fonts.css">
-  <link rel="stylesheet" href="css/poppins-fonts.css">
- <!-- animation -->
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/headline-reset.css">
-  <link rel="stylesheet" href="css/headline-style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- custom CSS-->
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- fonts-->
+    <link rel="stylesheet" href="css/montserrat-fonts.css">
+    <link rel="stylesheet" href="css/poppins-fonts.css">
+    <!-- animation -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/headline-reset.css">
+    <link rel="stylesheet" href="css/headline-style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+<!-- 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+    function sendemail(event) {
+        event.preventDefault(); // Prevents the form from reloading the page
+
+        console.log("okok");
+
+        // Collect form data
+        var firstName = document.getElementById("firstName").value;
+        var phoneNumber = document.getElementById("phoneNumber").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+
+        // Log form data for debugging purposes
+        console.log("Sending email...");
+        console.log("From: " + email);
+        console.log("Subject: " + subject);
+        console.log("Message: " + message);
+
+        // Send email using SMTP.js
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "7952rutamavani@gmail.com",  // Replace with your actual username
+            Password: "F7622856EF00A74E988881E18FD4557149D4",  // Replace with your actual password
+            To: 'rutamavani01@gmail.com',  // Replace with your receiving email
+            From: email,  // Email entered by the user
+            Subject: subject,
+            Body: `
+            <h3>New Contact Form Submission</h3>
+            <p><strong>Name:</strong> ${firstName}</p>
+            <p><strong>Phone Number:</strong> ${phoneNumber}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Message:</strong> ${message}</p>
+        `
+        }).then(function (response) {
+            console.log("Email sent successfully:", response);
+            alert("Message sent successfully!");
+        }).catch(function (error) {
+            console.error("Failed to send email:", error);
+            alert("Failed to send the message. Please try again later.");
+        });
+    }
+</script> -->
+
+<!-- EmailJS -->     
+   <!-- <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+  <script type="text/javascript">
+    (function() {
+        emailjs.init("Ad7eIQxcZFPFw2LBK"); // Your actual Public Key
+    })();
+  </script>  -->
 </head>
 
 <body class="body-color">
-
   <!-- header -->
   <nav class="navbar navbar-expand-lg py-2 position-sticky top-0">
     <div class="container">
@@ -62,15 +117,15 @@
             <h1 class="cd-headline clip is-full-width text-light pb-4">
               <span class="d-block p-0">Hi, I’m <span class="red-900 p-0">Milan Dodiya</span> <br> </span>
               <div class="s-line d-flex align-items-center">
-                a <span class="cd-words-wrapper p-0 ps-3 ">
-                  <b class="is-visible fst-normal">Mobile Developer.</b>
-                  <b>Web Developer.</b>
-                  <b>UI/UX Designer.</b>
+                 <span class="cd-words-wrapper p-0 ps-3 ">
+                  <b class="is-visible fst-normal">a Mobile App Developer.</b>
+                  <b>a Web App Developer.</b>
+                  <b>a UI/UX Designer.</b>
                 </span>
               </div>
             </h1>
             <p class="fs-4">
-              I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.
+              I specialize in delivering customer-oriented, cost-effective, and high-quality IT management and business solutions. My focus is on fostering long-term partnerships by providing comprehensive IT services and ongoing maintenance that help businesses thrive.
             </p>
           </div>
           <div class="icon row">
@@ -78,19 +133,25 @@
               <h6 class="text-white-50">FIND WITH ME</h6>
               <div class="col-12 my-3 row">
                 <div class="col-2 me-3">
+                  <a href="https://www.facebook.com/milan.sdodiya/?viewas=100000686899395" target="_blank"> 
                   <div class="f-icon bg-bs transition position-relative overflow-hidden fs-3 d-flex align-items-center justify-content-center">
                     <i class="fa-brands fa-facebook-f"></i>
                   </div>
+                  </a>
                 </div>
                 <div class="col-2 me-3">
+                  <a href="https://join.skype.com/invite/VhllSQpy1LHw" target="_blank">
                   <div class="f-icon bg-bs transition position-relative overflow-hidden fs-3 d-flex align-items-center justify-content-center">
-                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-skype"></i>
                   </div>
+                </a>
                 </div>
                 <div class="col-2">
+                  <a href="https://www.linkedin.com/in/milan-dodiya-740468143" target="_blank">
                   <div class="f-icon bg-bs transition position-relative overflow-hidden fs-3 d-flex align-items-center justify-content-center">
                     <i class="fa-brands fa-linkedin"></i>
                   </div>
+                </a>
                 </div>
               </div>
             </div>
@@ -128,7 +189,7 @@ I take pride in having built my business organically, without any external capit
 <br>
 My key interests include software engineering, marketing management, human resource management, and operational and strategic planning.
 <br><br>
-                    <b class="bold-text">My work & career</b> <br><br>
+                    <b class="bold-text">My work</b> <br><br>
                   
                     I specialize in delivering customer-oriented, cost-effective, and high-quality IT management and business solutions. My focus is on fostering long-term partnerships by providing comprehensive IT services and ongoing maintenance that help businesses thrive.<br><br>
 
@@ -139,7 +200,6 @@ My key interests include software engineering, marketing management, human resou
 <i class="fa-solid fa-circle about-font me-3"></i>Cross-Platform: Flutter, Dart, React Native, Ionic  <br>
 <i class="fa-solid fa-circle about-font me-3"></i>Backend: Firebase, Node.js, RESTful APIs, GraphQL<br>
 <i class="fa-solid fa-circle about-font me-3"></i>UI/UX Tools: Figma, Adobe XD, Sketch, <br>
-<i class="fa-solid fa-circle about-font me-3"></i>Wireframing, Prototyping<br>
 <i class="fa-solid fa-circle about-font me-3"></i>Wireframing, Prototyping<br><br>
 
 <b class="bold-text"> Why Work with Me?</b><br><br>  
@@ -164,7 +224,6 @@ My key interests include software engineering, marketing management, human resou
     <div class="container">
       <div class="row justify-content-center">
         <div class="title text-center">
-          <h6 class="red-900">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h6>
           <h1 class="white-600">My Portfolio</h1>
         </div>
         <div class="col-12 row justify-content-center g-5 m-0">
@@ -177,7 +236,7 @@ My key interests include software engineering, marketing management, human resou
                 <div class="b-title row">
                
                 </div>
-                <a href="#" class="card-text white-600">Collage Maker | Photo Editor: Make Anything <i class="fa-solid fa-arrow-up-long ps-3 red-900"></i></a>
+                <a href="#" class="card-text white-600">Collage Maker | Photo Editor: Make Anything <i class="fa-solid ps-3 red-900"></i></a>
               </div>
             </div>
           </div>
@@ -190,7 +249,7 @@ My key interests include software engineering, marketing management, human resou
                 <div class="b-title row">
                 
                 </div>
-                <a href="#" class="card-text white-600">Beauty Camera | Selfie Camera: Polish<i class="fa-solid fa-arrow-up-long ps-3 red-900"></i></a>
+                <a href="#" class="card-text white-600">Beauty Camera | Selfie Camera: Polish<i class="fa-solid ps-3 red-900"></i></a>
               </div>
             </div>
           </div>
@@ -204,7 +263,7 @@ My key interests include software engineering, marketing management, human resou
                 <div class="b-title row">
                   
                 </div>
-                <a href="#" class="card-text white-600">Beauty Camera | Sweet Camera: Polish <i class="fa-solid fa-arrow-up-long ps-3 red-900"></i></a>
+                <a href="#" class="card-text white-600">Beauty Camera | Sweet Camera: Polish <i class="fa-solid ps-3 red-900"></i></a>
               </div>
             </div>
           </div>
@@ -217,7 +276,7 @@ My key interests include software engineering, marketing management, human resou
                 <div class="b-title row">
                   
                 </div>
-                <a href="#" class="card-text white-600">Photo Editor: Polish Anything <i class="fa-solid fa-arrow-up-long ps-3 red-900"></i></a>
+                <a href="#" class="card-text white-600">Photo Editor: Polish Anything <i class="fa-solid ps-3 red-900"></i></a>
               </div>
             </div>
           </div>
@@ -230,7 +289,7 @@ My key interests include software engineering, marketing management, human resou
                 <div class="b-title row">
                   
                 </div>
-                <a href="#" class="card-text white-600">Beauty Camera: Selfie, Sticker<i class="fa-solid fa-arrow-up-long ps-3 red-900"></i></a>
+                <a href="#" class="card-text white-600">Beauty Camera: Selfie, Sticker<i class="fa-solid ps-3 red-900"></i></a>
               </div>
             </div>
           </div>
@@ -244,7 +303,6 @@ My key interests include software engineering, marketing management, human resou
     <div class="container">
       <div class="row">
         <div class="title text-center">
-          <h6 class="red-900">6+ YEARS OF EXPERIENCE</h6>
           <h1 class="white-600">My Resume</h1>
         </div>
 
@@ -279,8 +337,7 @@ My key interests include software engineering, marketing management, human resou
             <div class="row">
               <div class="col-8 pe-5">
                 <div class="title py-5">
-                  <h6 class="red-900">1998 - 2010</h6>
-                  <h2 class="white-600">Personal Information </h2>
+                  <h2 class="white-600">Personal Details </h2>
                 </div>
               
                   <div class="r-bodysss my-5">
@@ -293,7 +350,7 @@ My key interests include software engineering, marketing management, human resou
                     </tr>
                     <tr>
                       <th class="pe-4 pb-4"><h3>Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h3></th>
-                      <td class="m-3 pb-5"><h3>417, 4th Floor, Escon Plaza, Chhaprabhatha Road, Amroli, Surat, Gujarat 394107.</h3></td>
+                      <td class="m-3 pb-5"><h3>417, 4th Floor, Escon Plaza, Chhaprabhatha Road, Amroli, Surat, Gujarat 394107</h3></td>
                      
                     </tr>
                     <tr>
@@ -304,11 +361,6 @@ My key interests include software engineering, marketing management, human resou
                     <tr>
                       <th class="pe-4 pb-4"><h3>Designation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h3></th>
                       <td class="m-3"><h3>Full Stack Developer</h3></td>
-                     
-                    </tr>
-                    <tr>
-                      <th class="pe-4 pb-4"><h3>Company Phone&nbsp;&nbsp;&nbsp;:</h3></th>
-                      <td class="m-3"><h3>+919662165636</h3></td>
                      
                     </tr>
                     <tr>
@@ -341,56 +393,28 @@ My key interests include software engineering, marketing management, human resou
             <div class="row">
               <div class="col-6 pe-5">
                 <div class="title py-5">
-                  <h6 class="red-900">1998 - 2010</h6>
-                  <h2 class="white-600">BSc Education </h2>
+                  <h2 class="white-600">BCA Education Education </h2>
                 </div>
                 <div class="resume-body ">
                   <div class="r-body my-5">
                     <div class="box">
                       <div class="b-title align-items-center row py-5">
                         <div class="col-9 p-0">
-                          <h3 class="text-light">BSc in Computer Science</h3>
+                          <h3 class="text-light">BCA in Computer Science</h3>
                           <h6 class="text-white-50">University of DVI (2006 - 2010)</h6>
                         </div>
                         <div class="col-3 justify-content-end d-flex">
-                          <span class="red-900 p-4 border-radius-10">3.90/4</span>
                         </div>
                       </div>
                       <p class="py-3 text-white-50">
-                        The training provided by universities in order to prepare people to work in various sectors of
-                        the economy or areas of culture.
+                        BCA covers a range of topics, including programming languages, database management, networking, web development, software engineering, data structures, and computer architecture.
                       </p>
                     </div>
                   </div>
                  
                 </div>
               </div>
-              <div class="col-6 ps-5">
-                <div class="title py-5">
-                  <h6 class="red-900">2010 - 2022</h6>
-                  <h2 class="white-600">MSc Education</h2>
-                </div>
-                <div class="resume-body my-5">
-                  <div class="r-body">
-                    <div class="box">
-                      <div class="b-title align-items-center row py-5">
-                        <div class="col-9 p-0">
-                          <h3 class="text-light">BSc in Computer Science</h3>
-                          <h6 class="text-white-50">University of DVI (2006 - 2010)</h6>
-                        </div>
-                        <div class="col-3 justify-content-end d-flex">
-                          <span class="red-900 p-4 border-radius-10">3.90/4</span>
-                        </div>
-                      </div>
-                      <p class="py-3 text-white-50">
-                        The training provided by universities in order to prepare people to work in various sectors of
-                        the economy or areas of culture.
-                      </p>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
+            
             </div>
           </div>
 
@@ -461,7 +485,7 @@ My key interests include software engineering, marketing management, human resou
                                     <div class="img py-5 align-items-center d-flex justify-content-center">
                                     <img src="image/section-7/php.svg"  width="20%"alt="">
                                   </div>
-                                  <h6 class="p-4">php</h6>
+                                  <h6 class="p-4">PHP</h6>
                                   </div>
                                 </div>
                               </div>
@@ -481,7 +505,7 @@ My key interests include software engineering, marketing management, human resou
                                     <div class="img py-5 align-items-center d-flex justify-content-center">
                                     <img src="image/section-7/c.svg"  width="20%"alt="">
                                   </div>
-                                  <h6 class="p-4">C#</h6>
+                                  <h6 class="p-4">Reactjs</h6>
                                   </div>
                                 </div>
                               </div>
@@ -657,6 +681,36 @@ My key interests include software engineering, marketing management, human resou
                                   </div>
                                 </div>
                               </div>
+                              <div class="col-4">
+                                <div class="box bg-bs border-radius-10 text-center position-relative overflow-hidden">
+                                  <div class="content">
+                                    <div class="img py-5 align-items-center d-flex justify-content-center">
+                                    <img src="image/section-7/sketch.svg"  width="20%"alt="">
+                                  </div>
+                                  <h6 class="p-4">Sketch</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="box bg-bs border-radius-10 text-center position-relative overflow-hidden">
+                                  <div class="content">
+                                    <div class="img py-5 align-items-center d-flex justify-content-center">
+                                    <img src="image/section-7/miro.svg"  width="20%"alt="">
+                                  </div>
+                                  <h6 class="p-4">Miro</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="box bg-bs border-radius-10 text-center position-relative overflow-hidden">
+                                  <div class="content">
+                                    <div class="img py-5 align-items-center d-flex justify-content-center">
+                                    <img src="image/section-7/zeplin.svg"  width="20%"alt="">
+                                  </div>
+                                  <h6 class="p-4">Zeplin</h6>
+                                  </div>
+                                </div>
+                              </div>
                           
                             </div>
                           </div>
@@ -671,35 +725,44 @@ My key interests include software engineering, marketing management, human resou
           </div>
 
             <!-- experience -->
-            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-            <div class="row">
-              <div class="title py-5">
-                <h6 class="red-900">1998 - 2010</h6>
-                <h2 class="white-600 mb-5">Work Experience</h2>
-                <h4 class="text-white">Our mission is to deliver optimal solution with quality and client satisfaction, develop the open and friendly culture in company.to manage the clients with a great extent to retain existing clients and expand the circle.to improve the quality of services by exploring new ideas.</h4>
-              </div>
-              <div class="col-12 pe-5 d-flex justify-content-between align-items-center text-white">
-                  <div class="r-bodyss col-3 ">
-                   <h1 >300M+<br>
-                    Clients</h1> <br>
-                    <h4>Proin gravida nibh vel velit quet. Aenean sollicitudin, lorem quis bibendum.</h4>
+            <div class="tab-pane fade experience" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+            <div class="row title">
+              <h2 class="white-600 mb-3">Work Experience</h2>
+              <h4 class="text-white mb-5">Our mission is to deliver optimal solutions with a focus on quality and client satisfaction while fostering an open and friendly culture. We aim to manage client relationships effectively, retaining existing clients and expanding our network. By continuously exploring new ideas, we strive to improve the quality of our services.</h4>
+              <div class="col-12">
+                  <div class="r-bodyss col-12  d-flex justify-content-between justify-content-center align-items-center text-white">
+                  
+                      <div class="col-3 d-flex justify-content-center align-items-center" >
+                     <div class="col-3"> <h2>  <i class="fa-solid fa-display" ></i></h2></div>
+                     <div class="col-6">
+                      <h1 class="m-0">25+</h1>
+                      <h3>PROJECTS <br>DELIVERED</h3>
+                     </div>
+                      </div>
+                      <div class="col-3 d-flex justify-content-center align-items-center" >
+                        <div class="col-3"> <h2> <i class="fa-solid fa-code"></i></h2></div>
+                        <div class="col-6">
+                          <h1 class="m-0">10M+</h1>
+                         <h3>LINES OF <br>CODES</h3>
+                        </div>
+                         </div>
+                         <div class="col-3 d-flex justify-content-center align-items-center" >
+                          <div class="col-3"> <h2><i class="fa-solid fa-trophy"></i></h2></div>
+                          <div class="col-6">
+                            <h1 class="m-0">6M+</h1>
+                           <h3>YEARS OF <br>EXPERIENCE</h3>
+                          </div>
+                           </div>
+                           <div class="col-3 d-flex justify-content-center align-items-center" >
+                            <div class="col-3"> <h2><i class="fa-regular fa-thumbs-up"></i></h2></div>
+                            <div class="col-6">
+                              <h1 class="m-0">20M+</h1>
+                             <h3>SATISFIED <br>CLIENTS</h3>
+                            </div>
+                             </div>
                     </div>
 
-                    <div class="r-bodyss col-3 ">
-                      <h1 >10M+<br>
-                        Lines Of Codes</h1> <br>
-                        <h4>Proin gravida nibh vel velit quet. Aenean sollicitudin, lorem quis bibendum.</h4>
-                     </div>
-                     <div class="r-bodyss  col-3 ">
-                    <h1 >450+<br>
-                      Projects</h1> <br>
-                    <h4>Proin gravida nibh vel velit quet. Aenean sollicitudin, lorem quis bibendum.</h4>
-                     </div>
-                     <div class="r-bodyss col-3 ">
-                      <h1 >10K+<br>
-                        Projects</h1> <br>
-                      <h4>Proin gravida nibh vel velit quet. Aenean sollicitudin, lorem quis bibendum.</h4>
-                      </div> 
+                   
              
               
                 </div>
@@ -717,7 +780,6 @@ My key interests include software engineering, marketing management, human resou
     <div class="container border-end-0 border-start-0">
       <div class="row justify-content-center">
         <div class="title text-center">
-          <h6 class="red-900">WHAT CLIENTS SAY</h6>
           <h1 class="white-600">Testimonial</h1>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -744,7 +806,7 @@ My key interests include software engineering, marketing management, human resou
                   <div class="box">
                     <div class="b-title align-items-center row py-3 ">
                       <div class="col-9 p-0">
-                        <h3 class="white-600 pb-3"> Android App Development</h3>
+                        <h3 class="white-600 pb-3">Web & App Development</h3>
                       </div>
                  
                     </div>
@@ -779,7 +841,7 @@ My key interests include software engineering, marketing management, human resou
                     <div class="box">
                       <div class="b-title align-items-center row py-3 ">
                         <div class="col-9 p-0">
-                          <h3 class="white-600 pb-3"> Android App Development</h3>
+                          <h3 class="white-600 pb-3">Web & App Development</h3>
                         </div>
                         
                       </div>
@@ -814,7 +876,7 @@ My key interests include software engineering, marketing management, human resou
                     <div class="box">
                       <div class="b-title align-items-center row py-3 ">
                         <div class="col-9 p-0">
-                          <h3 class="white-600 pb-3"> Android App Development</h3>
+                          <h3 class="white-600 pb-3"> Web & App Development</h3>
                         </div>
                       </div>
                       <p class="py-3 text-white-50">It's great to hear that the collaboration with the DCS team went so smoothly, especially with such consistent communication and successful task completion. It sounds like a very productive partnership! If there's anything specific you'd like to dive deeper into or share, just let me know. 
@@ -844,7 +906,6 @@ My key interests include software engineering, marketing management, human resou
     <div class="container border-end-0 border-start-0">
       <div class="row">
         <div class="title text-center">
-          <h6 class="red-900">CONTACT</h6>
           <h1 class="white-600">Contact With Me</h1>
         </div>
         <div class="col-4 px-4">
@@ -854,61 +915,61 @@ My key interests include software engineering, marketing management, human resou
             </div>
             <div class="card-body pb-0 py-4">
               <h3 class="fw-bolder pb-2 text-light">Milan Dodiya</h3>
-          
-              <span class="card-text text-white-50 m-0 d-block py-1">Company Phone: <a href="#" class="">+91-95585 77898</a></span>
               <span class="card-text text-white-50 m-0 d-block py-1">Address: <a href="#" class="">417, 4th Floor, Escon Plaza,<br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Chhaprabhatha Road, Amroli, Surat,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gujarat 394107.</a></span>
-              <span class="card-text text-white-50 m-0 d-block py-1">Phone: <a href="#" class="">+012 345 678 90</a></span>
-              <span class="card-text text-white-50 m-0 d-block py-1">Email : <a href="#" class="">admin@example.com</a></span>
+              <span class="card-text text-white-50 m-0 d-block py-1">Phone: <a href="#" class="">+91 966-2165-636</a></span>
+              <span class="card-text text-white-50 m-0 d-block py-1">Email : <a href="#" class="">contact@milandodiya.com</a></span>
               <div class="find-icon row pt-5">
-                <p class="card-text text-white-50 pb-3">FIND WITH ME</p>
-                <div class="col-2 m-3 ms-0">
-                  <div class="find d-flex justify-content-center align-items-center border-radius-10 white-600 bg-transparent">
-                    <i class="fa-brands fa-twitter p-3"></i>
+                <div class="col-2 me-3">
+                  <a href="https://www.facebook.com/milan.sdodiya/?viewas=100000686899395" target="_blank"> 
+                  <div class="f-icon bg-bs transition position-relative overflow-hidden fs-3 d-flex align-items-center justify-content-center">
+                    <i class="fa-brands fa-facebook-f"></i>
                   </div>
+                  </a>
                 </div>
-                <div class="col-2 m-3">
-                  <div class="find d-flex justify-content-center align-items-center border-radius-10 white-600 bg-transparent">
-                    <i class="fa-brands fa-facebook-f p-3"></i>
+                <div class="col-2 me-3">
+                  <a href="https://join.skype.com/invite/VhllSQpy1LHw" target="_blank">
+                  <div class="f-icon bg-bs transition position-relative overflow-hidden fs-3 d-flex align-items-center justify-content-center">
+                    <i class="fa-brands fa-skype" ></i>
                   </div>
+                </a>
                 </div>
-                <div class="col-2 m-3">
-                  <div class="find d-flex justify-content-center align-items-center border-radius-10 white-600 bg-transparent">
-                    <i class="fa-brands fa-linkedin-in p-3"></i>
+                <div class="col-2">
+                  <a href="https://www.linkedin.com/in/milan-dodiya-740468143" target="_blank">
+                  <div class="f-icon bg-bs transition position-relative overflow-hidden fs-3 d-flex align-items-center justify-content-center">
+                    <i class="fa-brands fa-linkedin"></i>
                   </div>
+                </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-8 px-5 p-3">
-          <form class="row g-3 p-5">
+          <form  class="row g-3 p-5" onsubmit="sendemail(event)">
             <div class="col-md-6 pe-4 py-3">
-              <label for="validationDefault01" class="form-label text-white-50 pb-2">First name</label>
-              <input type="text" class="form-control p-4 border-radius-10" id="validationDefault01" required>
+                <label for="firstName" class="form-label text-white-50 pb-2">First Name</label>
+                <input type="text" class="form-control p-4 border-radius-10" id="firstName" name="firstName" required>
             </div>
             <div class="col-md-6 py-3">
-              <label for="validationDefault02" class="form-label text-white-50 pb-2">Phone Number</label>
-              <input type="text" class="form-control p-4 border-radius-10" id="validationDefault02" required>
+                <label for="phoneNumber" class="form-label text-white-50 pb-2">Phone Number</label>
+                <input type="text" class="form-control p-4 border-radius-10" id="phoneNumber" name="phoneNumber" required>
             </div>
             <div class="col-md-12 py-3">
-              <div class="input-group">
-                <label for="validationDefault02" class="col-12 form-label text-white-50 pb-2">Email</label>
-                <input type="text" class="border-radius-10 form-control p-4  rounded-5" id="validationDefaultUsername"
-                  aria-describedby="inputGroupPrepend2" required>
-              </div>
+                <div class="input-group">
+                    <label for="email" class="col-12 form-label text-white-50 pb-2">Email</label>
+                    <input type="email" class="border-radius-10 form-control p-4" id="email" name="email" required>
+                </div>
             </div>
-            <div class="col-md-12 py-3">
-              <label for="validationDefault02" class="form-label text-white-50 pb-2">SUBJECT</label>
-              <input type="text" class="form-control p-4 border-radius-10" id="validationDefault02" required>
-            </div>
-            <div>
-              <label for="validationTextarea" class="form-label text-white-50 py-2">Your Message</label>
-              <textarea cols="3" rows="6" class="form-control is-invalid" id="validationTextarea" required></textarea>
+           
+            <div class="col-md-12 py-3 textarea">
+                <label for="message" class="form-label text-white-50 py-2 ">Your Message</label>
+                <textarea cols="3" rows="6" class="form-control" id="message" name="message" required></textarea>
             </div>
             <div class="col-12 mt-4">
-              <button class="col-12 btn btn-primary p-4 border-0" type="submit">SEND MESSAGE</button>
+                <button class="col-12 btn btn-primary p-4 border-0" type="submit">SEND MESSAGE</button>
             </div>
-          </form>
+        </form>
+          
         </div>
       </div>
     </div>
@@ -919,22 +980,29 @@ My key interests include software engineering, marketing management, human resou
       <div class="row justify-content-between">
         <div class="col-3">
           <div class="data">
-            <img src="image/section-1/logo.png" alt="">
-            <div class="icon row pt-5">
-              <div class="col-3">
-                <div class="foot d-flex justify-content-center align-items-center me-1 bg-bs white-600 border-radius-10">
+            <!-- <img src="image/section-1/logo.png" alt=""> -->
+            <h1 class="text-white p-0">Milan Dodiya</h1> 
+            <div class="find-icon row pt-5">
+              <div class="col-2 me-3">
+                <a href="https://www.facebook.com/milan.sdodiya/?viewas=100000686899395" target="_blank"> 
+                <div class="f-icon bg-bs transition position-relative overflow-hidden fs-3 d-flex align-items-center justify-content-center">
                   <i class="fa-brands fa-facebook-f"></i>
                 </div>
+                </a>
               </div>
-              <div class="col-3">
-                <div class="foot d-flex justify-content-center align-items-center me-1 bg-bs white-600 border-radius-10">
-                  <i class="fa-brands fa-twitter"></i>
+              <div class="col-2 me-3">
+                <a href="https://join.skype.com/invite/VhllSQpy1LHw" target="_blank">
+                <div class="f-icon bg-bs transition position-relative overflow-hidden fs-3 d-flex align-items-center justify-content-center">
+                  <i class="fa-brands fa-skype"></i>
                 </div>
+              </a>
               </div>
-              <div class="col-3">
-                <div class="foot d-flex justify-content-center align-items-center me-1 bg-bs white-600 border-radius-10">
-                  <i class="fa-brands fa-linkedin-in"></i>
+              <div class="col-2">
+                <a href="https://www.linkedin.com/in/milan-dodiya-740468143" target="_blank">
+                <div class="f-icon bg-bs transition position-relative overflow-hidden fs-3 d-flex align-items-center justify-content-center">
+                  <i class="fa-brands fa-linkedin"></i>
                 </div>
+              </a>
               </div>
             </div>
           </div>
@@ -943,11 +1011,11 @@ My key interests include software engineering, marketing management, human resou
           <div class="data">
             <h6 class="pb-3 red-900">Quick Link</h6>
             <ul>
-              <li class="py-2"> <a href="#">About</a> </li>
-              <li class="py-2"> <a href="#">Portfolio</a> </li>
-              <li class="py-2"> <a href="#">Resume</a> </li>
-              <li class="py-2"> <a href="#">Testimonial</a> </li>
-              <li class="py-2"> <a href="#">Contact</a> </li>
+              <li class="py-2"> <a href="#features">About</a> </li>
+              <li class="py-2"> <a href="#gallery">Portfolio</a> </li>
+              <li class="py-2"> <a href="#resume">Resume</a> </li>
+              <li class="py-2"> <a href="#testimonial">Testimonial</a> </li>
+              <li class="py-2"> <a href="#contact">Contact</a> </li>
             </ul>
           </div>
         </div>
@@ -957,8 +1025,8 @@ My key interests include software engineering, marketing management, human resou
             <ul>
               <li class="py-2"> 
                 <h3 class="text-white"><span class="text-white-50 m-0 d-block py-1"><i class="fa-solid fa-location-dot me-3"></i><a href="#" class="">417, 4th Floor, Escon Plaza,Chhaprabhatha Road, Amroli, Surat Gujarat 394107.</a></span></h3></li>
-              <li class="py-2">  <h3> <span class="card-text text-white-50 m-0 d-block py-1"><i class="fa-solid fa-phone me-3"></i><a href="#" class="">+012 345 678 90</a></span></h3> </li>
-              <li class="py-2"><h3> <span class="card-text text-white-50 m-0 d-block py-1"><i class="fa-solid fa-envelope me-3"></i> <a href="#" class="">admin@example.com</a></span></h3></li>
+              <li class="py-2">  <h3> <span class="card-text text-white-50 m-0 d-block py-1"><i class="fa-solid fa-phone me-3"></i><a href="#" class="">+91 966-2165-636</a></span></h3> </li>
+              <li class="py-2"><h3> <span class="card-text text-white-50 m-0 d-block py-1"><i class="fa-solid fa-envelope me-3"></i> <a href="#" class="">contact@milandodiya.com</a></span></h3></li>
             </ul>
           </div>
         </div>
@@ -969,25 +1037,149 @@ My key interests include software engineering, marketing management, human resou
   <section class="line py-5">
     <div class="container">
       <div class="row">
-        <h4 class="text-center white-600">© 2023. All rights reserved by Rainbow-Themes</h4>
+        <h4 class="text-center white-600">© 2018. All rights reserved by Milan Dodiya</h4>
       </div>
     </div>
   </section>
 
   <script src="js/JQuery.min.js"></script>
 
-  <!-- <script src="js/bootstrap.min.js"></script> -->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/popper.min.js"></script> -->
-  
-  <script src="js/healine-modernizr.js"></script>
-  <script src="js/headine-jquery-2.1.1.js"></script>
-  <script src="js/headline-main.js"></script>
-  <script src="js/wow.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
 
-  <script>
+    <script src="js/healine-modernizr.js"></script>
+    <script src="js/headine-jquery-2.1.1.js"></script>
+    <script src="js/headline-main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script>
     new WOW().init();
   </script>
-</body>
+  </body>
+
+  <!-- EmailJS -->
+  <!-- <script type="text/javascript">
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      const firstName = document.getElementById('firstName').value;
+      const phoneNumber = document.getElementById('phoneNumber').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      const templateParams = {
+          first_name: firstName,
+          phone_number: phoneNumber,
+          email: email,
+          subject: subject,
+          message: message
+      };
+      emailjs.send('service_988nm5i', 'template_qwufnu7', templateParams)
+      .then(function(response) {
+          alert('Message sent successfully!');
+          console.log('SUCCESS!', response.status, response.text);
+      }, function(error) {
+          alert('Failed to send the message. Please try again later.');
+          console.log('FAILED...', error);
+      });
+  });
+</script> -->
+
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript"> -->
+<!-- // function sendemail(event) {
+//     event.preventDefault(); // Prevents the form from reloading the page
+
+//     console.log("okok");
+
+//     // Collect form data
+//     var firstName = document.getElementById("firstName").value;
+//     var phoneNumber = document.getElementById("phoneNumber").value;
+//     var email = document.getElementById("email").value;
+//     var subject = document.getElementById("subject").value;
+//     var message = document.getElementById("message").value;
+
+//     // Log form data for debugging purposes
+//     console.log("Sending email...");
+//     console.log("From: " + email);
+//     console.log("Subject: " + subject);
+//     console.log("Message: " + message);
+
+//     // Send email using SMTP.js
+//     Email.send({
+//         Host: "smtp.elasticemail.com",
+//         Username: "7952rutamavani@gmail.com",  // Replace with your actual username
+//         Password: "F7622856EF00A74E988881E18FD4557149D4",  // Replace with your actual password
+//         To: 'rutamavani01@gmail.com',  // Replace with your receiving email
+//         From: email,  // Email entered by the user
+//         Subject: subject,
+//         Body: `
+//             <h3>New Contact Form Submission</h3>
+//             <p><strong>Name:</strong> ${firstName}</p>
+//             <p><strong>Phone Number:</strong> ${phoneNumber}</p>
+//             <p><strong>Email:</strong> ${email}</p>
+//             <p><strong>Message:</strong> ${message}</p>
+//         `
+//     }).then(function(response) {
+//         console.log("Email sent successfully:", response);
+//         alert("Message sent successfully!");
+//     }).catch(function(error) {
+//         console.error("Failed to send email:", error);
+//         alert("Failed to send the message. Please try again later.");
+//     });
+// } -->
+<!-- </script> -->
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+    function sendemail(event) {
+        event.preventDefault(); // Prevents the form from reloading the page
+
+        console.log("okok");
+
+        // Collect form data
+        var firstName = document.getElementById("firstName").value;
+        var phoneNumber = document.getElementById("phoneNumber").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+
+        // Log form data for debugging purposes
+        console.log("Sending email...");
+        console.log("From: " + email);
+        console.log("Subject: " + subject);
+        console.log("Message: " + message);
+
+        // Send email using SMTP.js
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "7952rutamavani@gmail.com",  // Replace with your actual username
+            Password: "F7622856EF00A74E988881E18FD4557149D4",  // Replace with your actual password
+            To: 'rutamavani01@gmail.com',  // Replace with your receiving email
+            From: email,  // Email entered by the user
+            Subject: subject,
+            Body: `
+            <h3>New Contact Form Submission</h3>
+            <p><strong>Name:</strong> ${firstName}</p>
+            <p><strong>Phone Number:</strong> ${phoneNumber}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Message:</strong> ${message}</p>
+        `
+        }).then(function (response) {
+            console.log("Email sent successfully:", response);
+            alert("Message sent successfully!");
+        }).catch(function (error) {
+            console.error("Failed to send email:", error);
+            alert("Failed to send the message. Please try again later.");
+        });
+    }
+</script>
+
+
+
 
 </html>
