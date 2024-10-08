@@ -19,61 +19,16 @@
     <!-- custom CSS-->
     <link rel="stylesheet" href="css/style.css">
 
-<!-- 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script type="text/javascript">
-    function sendemail(event) {
-        event.preventDefault(); // Prevents the form from reloading the page
-
-        console.log("okok");
-
-        // Collect form data
-        var firstName = document.getElementById("firstName").value;
-        var phoneNumber = document.getElementById("phoneNumber").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
-
-        // Log form data for debugging purposes
-        console.log("Sending email...");
-        console.log("From: " + email);
-        console.log("Subject: " + subject);
-        console.log("Message: " + message);
-
-        // Send email using SMTP.js
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "7952rutamavani@gmail.com",  // Replace with your actual username
-            Password: "F7622856EF00A74E988881E18FD4557149D4",  // Replace with your actual password
-            To: 'rutamavani01@gmail.com',  // Replace with your receiving email
-            From: email,  // Email entered by the user
-            Subject: subject,
-            Body: `
-            <h3>New Contact Form Submission</h3>
-            <p><strong>Name:</strong> ${firstName}</p>
-            <p><strong>Phone Number:</strong> ${phoneNumber}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Message:</strong> ${message}</p>
-        `
-        }).then(function (response) {
-            console.log("Email sent successfully:", response);
-            alert("Message sent successfully!");
-        }).catch(function (error) {
-            console.error("Failed to send email:", error);
-            alert("Failed to send the message. Please try again later.");
-        });
-    }
-</script> -->
 
 <!-- EmailJS -->     
-   <!-- <script type="text/javascript"
+   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
   <script type="text/javascript">
     (function() {
         emailjs.init("Ad7eIQxcZFPFw2LBK"); // Your actual Public Key
     })();
-  </script>  -->
+  </script> 
 </head>
 
 <body class="body-color">
@@ -945,7 +900,7 @@ My key interests include software engineering, marketing management, human resou
           </div>
         </div>
         <div class="col-8 px-5 p-3">
-          <form  class="row g-3 p-5" onsubmit="sendemail(event)">
+          <form  class="row g-3 p-5" id="contact-form">
             <div class="col-md-6 pe-4 py-3">
                 <label for="firstName" class="form-label text-white-50 pb-2">First Name</label>
                 <input type="text" class="form-control p-4 border-radius-10" id="firstName" name="firstName" required>
@@ -1059,21 +1014,19 @@ My key interests include software engineering, marketing management, human resou
   </body>
 
   <!-- EmailJS -->
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
   document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault(); 
 
       const firstName = document.getElementById('firstName').value;
       const phoneNumber = document.getElementById('phoneNumber').value;
       const email = document.getElementById('email').value;
-      const subject = document.getElementById('subject').value;
       const message = document.getElementById('message').value;
 
       const templateParams = {
-          first_name: firstName,
-          phone_number: phoneNumber,
+        firstName: firstName,
+        phoneNumber: phoneNumber,
           email: email,
-          subject: subject,
           message: message
       };
       emailjs.send('service_988nm5i', 'template_qwufnu7', templateParams)
@@ -1085,56 +1038,10 @@ My key interests include software engineering, marketing management, human resou
           console.log('FAILED...', error);
       });
   });
-</script> -->
+</script>
 
+<!-- smtpJS -->
 <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script type="text/javascript"> -->
-<!-- // function sendemail(event) {
-//     event.preventDefault(); // Prevents the form from reloading the page
-
-//     console.log("okok");
-
-//     // Collect form data
-//     var firstName = document.getElementById("firstName").value;
-//     var phoneNumber = document.getElementById("phoneNumber").value;
-//     var email = document.getElementById("email").value;
-//     var subject = document.getElementById("subject").value;
-//     var message = document.getElementById("message").value;
-
-//     // Log form data for debugging purposes
-//     console.log("Sending email...");
-//     console.log("From: " + email);
-//     console.log("Subject: " + subject);
-//     console.log("Message: " + message);
-
-//     // Send email using SMTP.js
-//     Email.send({
-//         Host: "smtp.elasticemail.com",
-//         Username: "7952rutamavani@gmail.com",  // Replace with your actual username
-//         Password: "F7622856EF00A74E988881E18FD4557149D4",  // Replace with your actual password
-//         To: 'rutamavani01@gmail.com',  // Replace with your receiving email
-//         From: email,  // Email entered by the user
-//         Subject: subject,
-//         Body: `
-//             <h3>New Contact Form Submission</h3>
-//             <p><strong>Name:</strong> ${firstName}</p>
-//             <p><strong>Phone Number:</strong> ${phoneNumber}</p>
-//             <p><strong>Email:</strong> ${email}</p>
-//             <p><strong>Message:</strong> ${message}</p>
-//         `
-//     }).then(function(response) {
-//         console.log("Email sent successfully:", response);
-//         alert("Message sent successfully!");
-//     }).catch(function(error) {
-//         console.error("Failed to send email:", error);
-//         alert("Failed to send the message. Please try again later.");
-//     });
-// } -->
-<!-- </script> -->
-
-
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
     function sendemail(event) {
         event.preventDefault(); // Prevents the form from reloading the page
@@ -1177,9 +1084,6 @@ My key interests include software engineering, marketing management, human resou
             alert("Failed to send the message. Please try again later.");
         });
     }
-</script>
-
-
-
+</script> -->
 
 </html>
