@@ -3,6 +3,94 @@
     outline: none;
 }
 
+/* dialog box */
+.ui-dialog {
+    text-align: center;
+}
+
+.dialog-output {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: font-bold;
+}
+.contect input, .contect textarea{
+    font-size: 15px;
+}
+/* 
+  dialog:-internal-dialog-in-top-layer::backdrop {
+      background: transparent !important;
+  } */
+  /* .modal-header .close {
+    margin-top: -12px;
+    margin-left: 282px;
+} */
+.modal-dialog {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+    margin-top: 40px;
+}
+.modal-content {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    
+}
+.modal-footer button, .modal-header button{
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    color: white;
+    padding: 4px 12px;
+}
+.ui-btn-close {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    height: 20%;
+    margin: 10px;
+
+}
+.modal-dialog{
+    background-color: #121415;
+}
+/* For webkit-based browsers */
+::-webkit-scrollbar {
+    width: 8px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* color of the scrollbar thumb */
+    border-radius: 10px; /* rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color of the thumb on hover */
+}
+
+.modal-body {
+    max-height: 645px; /* Set the maximum height of the modal body */
+    overflow-y: auto; /* Enable vertical scrollbar when content exceeds max-height */
+}
+.modal h4{
+    line-height: 2  
+}
+.modal {
+    z-index: 1050;
+}
+.box-btn{
+    background: none !important; ;
+    border-radius: 25px;
+    border: 0;
+}
+
+
 :root {
     --black-900: #212428;
     --red-900: #f9004d;
@@ -260,18 +348,24 @@ nav {
     border-radius: 10px;
 }
 
-.banner .f-icon , .contect .f-icon, footer .f-icon{
+.banner .f-icon,
+.contect .f-icon,
+footer .f-icon {
     height: 60px;
     width: 60px;
     border-radius: 10px;
     color: var(--white-600);
 }
 
-.banner .f-icon:hover , .contect .f-icon:hover, footer .f-icon:hover{
+.banner .f-icon:hover,
+.contect .f-icon:hover,
+footer .f-icon:hover {
     transform: translateY(-5px);
 }
 
-.banner .f-icon::after, .contect .f-icon::after, footer .f-icon::after {
+.banner .f-icon::after,
+.contect .f-icon::after,
+footer .f-icon::after {
     content: '';
     position: absolute;
     height: 100%;
@@ -281,19 +375,23 @@ nav {
     transition: 0.5s;
 }
 
-.banner .f-icon:hover::after, .contect .f-icon:hover::after, footer .f-icon:hover::after{
+.banner .f-icon:hover::after,
+.contect .f-icon:hover::after,
+footer .f-icon:hover::after {
     background: linear-gradient(to right bottom, #212428, #16181c);
 }
 
-.experience h2{
-font-size: 50px;
+.experience h2 {
+    font-size: 50px;
 }
-.experience .r-bodyss h1{
+
+.experience .r-bodyss h1 {
     font-size: 40px;
     font-weight: 500;
 }
-.experience .r-bodyss h3{
-    font-size:16px;
+
+.experience .r-bodyss h3 {
+    font-size: 16px;
     color: gray;
 }
 
@@ -447,9 +545,11 @@ font-size: 50px;
     padding: 7px;
     align-items: center;
 }
-.textarea{
-    margin-bottom: 50px;
+
+.textarea {
+    margin-bottom: 3px;
 }
+
 .r-bodyss {
     box-shadow: 10px 10px 19px #1c1e22,
         -10px -10px 19px #262a2e;
@@ -459,7 +559,9 @@ font-size: 50px;
     transition: 0.5s;
     padding: 70px 0px;
 }
-.carousel-control-next, .carousel-control-prev  {
+
+.carousel-control-next,
+.carousel-control-prev {
     position: absolute;
     top: 193px;
     bottom: 109px;
@@ -478,13 +580,16 @@ font-size: 50px;
     opacity: .5;
     transition: opacity .15s ease;
 }
+
 .carousel-control-prev {
     z-index: +999;
 }
+
 .contect table th {
-    color:gray;
+    color: gray;
     font-weight: 700;
 }
+
 .contect table td {
     color: var(--white-600);
 }
@@ -833,6 +938,7 @@ body {
 .contect .card .card-body span a:hover {
     color: var(--red-900);
 }
+
 /* 
 .contect .card .card-body span a::after {
     content: '';
@@ -874,11 +980,13 @@ body {
     font-size: 16px;
 }
 
-.contect .card-body .find-icon p, footer .card-body .find-icon p {
+.contect .card-body .find-icon p,
+footer .card-body .find-icon p {
     font-size: 14px;
 }
 
-.content .find::after, footer  .find::after {
+.content .find::after,
+footer .find::after {
     position: absolute;
     content: '';
     height: 100%;
@@ -889,7 +997,8 @@ body {
     transition: 0.5s;
 }
 
-.content .find:hover::after, footer.find:hover::after {
+.content .find:hover::after,
+footer.find:hover::after {
     opacity: 1;
     color: var(--red-900);
 }

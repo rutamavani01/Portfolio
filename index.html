@@ -26,9 +26,69 @@
 </script>
   <script type="text/javascript">
     (function() {
-        emailjs.init("Ad7eIQxcZFPFw2LBK"); // Your actual Public Key
+        emailjs.init("OzWg2sekSh6x1Gjqu"); // Your actual Public Key
     })();
   </script> 
+
+
+<!-- dialog box -->
+
+<!-- <script type="module" src="https://cdn.jsdelivr.net/npm/jolty@0.6.2/dist/jolty.esm.min.js"></script> -->
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+  $(document).on("click","#cust_btn_1",function(){
+    $("#myModal").modal("toggle");
+  });
+
+  $(document).on("click","#cust_btn_2",function(){
+    $("#myModal2").modal("toggle");
+  });
+  $(document).on("click", "#cust_btn_3", function() {
+    $("#myModal3").modal("toggle");
+});
+$(document).on("click","#cust_btn_4",function(){
+    $("#myModal4").modal("toggle");
+  });
+  $(document).on("click", "#cust_btn_5", function() {
+    $("#myModal5").modal("toggle");
+});
+$(document).on("click", "#cust_btn_6", function() {
+    $("#myModal6").modal("toggle");
+});
+$('#myModal').on('hidden.bs.modal', function () {
+    $('body').removeClass('modal-open');
+    $('.modal-backdrop').remove();
+});
+</script>
+<!-- <script type="module">
+  import { Dialog } from 'https://cdn.jsdelivr.net/npm/jolty@0.6.2/dist/jolty.esm.min.js';
+
+  document.addEventListener("DOMContentLoaded", () => {
+    // Initialize all dialogs
+    Dialog.initAll();
+
+    // Get the specific dialog and set up the event listener
+    const dialog = Dialog.get("dialog-cats-or-dogs");
+    if (dialog) {
+      dialog.on("show", ({ base }, { trigger }) => {
+        const outputElement = base.querySelector("[data-output]");
+        if (outputElement && trigger.dataset.whatever) {
+          outputElement.textContent = trigger.dataset.whatever;
+        }
+      });
+    }
+  });
+</script> -->
 </head>
 
 <body class="body-color">
@@ -79,9 +139,9 @@
                 </span>
               </div>
             </h1>
-            <p class="fs-4">
+            <h4 class="fs-4 text-white-50">
               I specialize in delivering customer-oriented, cost-effective, and high-quality IT management and business solutions. My focus is on fostering long-term partnerships by providing comprehensive IT services and ongoing maintenance that help businesses thrive.
-            </p>
+            </h4>
           </div>
           <div class="icon row">
             <div class="find row col-6">
@@ -182,72 +242,399 @@ My key interests include software engineering, marketing management, human resou
           <h1 class="white-600">My Portfolio</h1>
         </div>
         <div class="col-12 row justify-content-center g-5 m-0">
-          <div class="col-4">
-            <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
-              <div class="img overflow-hidden border-radius-10">
-                <img src="image//section-4/1.png" class="card-img-top transition" alt="">
-              </div>
-              <div class="card-body p-0 py-4">
-                <div class="b-title row">
-               
+          <!-- 1 -->
+          <div class="col-md-4">
+            <button type="button" id="cust_btn_1" class="box-btn" data-toggle="modal" data-target="#myModal">
+                <div class="card p-5 w-100 bg-bs border-radius-10 white-600">
+                    <div class="img overflow-hidden border-radius-10">
+                        <img src="image/section-4/1.png" class="card-img-top transition" alt="Collage Maker">
+                    </div>
+                    <div class="card-body p-0 py-4">
+                        <div class="b-title row"></div>
+                        <a href="#gallery" class="card-text white-600">
+                            Collage Maker | Photo Editor: Make Anything
+                            <i class="fa-solid ps-3 red-900"></i>
+                        </a>
+                    </div>
                 </div>
-                <a href="#" class="card-text white-600">Collage Maker | Photo Editor: Make Anything <i class="fa-solid ps-3 red-900"></i></a>
+            </button>
+        </div>
+    
+        <div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header border-0">
+                      <h2 class="modal-title white-600" id="myModalLabel">Collage Maker | Photo Editor: Make Anything</h2>
+                      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
+                  </div>
+                  <div class="modal-body border-0">
+                      <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
+                      <div class="col-12 d-flex justify-content-start mb-5">
+                          <div class="d-flex justify-content-start">
+                              <div class="col-2 text-white m-0">
+                                  <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                              </div>
+                              <div class="col-2 text-white m-0">
+                                  <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                              </div>
+                              <div class="col-2 text-white">
+                                  <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                              </div>
+                              <div class="col-2 text-white">
+                                  <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                              </div>
+                              <div class="col-2 text-white">
+                                  <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                              </div>
+                          </div>
+                          <div class="text-white-50">
+                              <h3>2236465 Reviews</h3>
+                          </div>
+                      </div>
+                      <h4 class="white-600 mt-3">Beauty Camera | Selfie Camera: Polish is the ultimate, free beauty camera and photo editor app packed with powerful features for capturing stunning selfies and videos. With this app, you can instantly take breathtaking photos and videos, enhanced by live stickers, face and body retouching, camera filters, and makeup effects—all in real-time. With just one tap, you can apply filters, stickers, and beauty effects to perfectly capture every moment.</h4>
+                      <br>
+                      <h4 class="white-600">Beauty Camera | Selfie Camera is more than just a photo and video app—it's a complete beauty studio in your pocket. As a makeup camera and photo collage maker, it provides a variety of free features and editing tools, including daily updated animated effects, skin smoothing, face slimming, acne and blemish removal, eye shape retouching, teeth whitening, and body reshaping. Whether you want to fine-tune your selfies or create eye-catching collages and music videos, this app has it all.
+                      </h4>
+                      <br>
+                     
+                      <br>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+                  </div>
               </div>
+          </div>
+      </div>
+          <!-- 2 -->
+          <div class="col-4">
+            <button type="button" id="cust_btn_2" class="box-btn" data-toggle="modal2" data-target="#myModal2">
+              <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
+                <div class="img overflow-hidden border-radius-10">
+                  <img src="image/section-4/3.png" class="card-img-top transition" alt="">
+                </div>
+                <div class="card-body p-0 py-4">
+                  <div class="b-title row"></div>
+                  <a href="#" class="card-text white-600">
+                    Beauty Camera | Selfie Camera: Polish
+                    <i class="fa-solid ps-3 red-900"></i>
+                  </a>
+                </div>
+              </div>
+            </button>
+          </div>
+    
+        <div class="modal fade col-7" id="myModal2" role="dialog2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h2 class="modal-title white-600" id="myModalLabel">Beauty Camera | Selfie Camera: Polish</h2>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
+                </div>
+                <div class="modal-body border-0">
+                    <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
+                    <div class="col-12 d-flex justify-content-start mb-5">
+                        <div class="d-flex justify-content-start">
+                            <div class="col-2 text-white m-0">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                            <div class="col-2 text-white m-0">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                            <div class="col-2 text-white">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                            <div class="col-2 text-white">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                            <div class="col-2 text-white">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                        </div>
+                        <div class="text-white-50">
+                            <h3>2236465 Reviews</h3>
+                        </div>
+                    </div>
+                    <h4 class="white-600 mt-3">Unlock your creativity with Collage Maker | Photo Editor: Make Anything! Designed to offer a seamless blend of professional technology and an intuitive interface, this app makes photo editing an enjoyable and magical experience.</h4>
+                    <br>
+                    <h4 class="white-600">Features to Elevate Your Photos:<br>
+                        Extensive Collection of Filters and Effects: Choose from countless filters, fonts, and stickers, including neon, drip, light FX, glitch, and more.<br>
+                        Stunning Effects: Apply dazzling effects that make your photos stand out.<br>
+                        Creative Collages: Easily create photo collages with a variety of layouts and templates.<br>
+                        Advanced Beauty Tools: Enhance your photos with face beauty, body retouch, cutout, and background blur features.
+                    </h4>
+                    <br>
+                    <h4 class="white-600">Why Collage Maker | Photo Editor: Make Anything Stands Out:<br>
+                        User-Friendly Interface: Enjoy seamless editing with an intuitive and easy-to-navigate design.<br>
+                        Professional Quality: Utilize cutting-edge technology for professional-grade photo edits.<br>
+                        High Download Numbers: Join over 1 million users who trust Collage Maker | Photo Editor: Make Anything on Google Play and the App Store.
+                    </h4>
+                    <br>
+                    <h4 class="white-600">Share Your Creations:<br>
+                        Direct Sharing: Post your masterpieces directly to Instagram, WhatsApp, Facebook, and more with ease.
+                    </h4>
+                    <br>
+                    <h4 class="white-600">Download Collage Maker | Photo Editor: Make Anything today and transform your photos into captivating artworks.</h4>
+                    <br>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- 3 -->
+      <div class="col-4">
+        <button type="button" id="cust_btn_3" class="box-btn" data-toggle="modal" data-target="#myModal3">
+          <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
+            <div class="img overflow-hidden border-radius-10">
+              <img src="image//section-4/4.png" class="card-img-top transition" alt="">
+            </div>
+            <div class="card-body p-0 py-4">
+              <div class="b-title row"></div>
+              <a href="#" class="card-text white-600">Beauty Camera | Sweet Camera: Polish</a>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
-              <div class="img overflow-hidden border-radius-10">
-                <img src="image//section-4/3.png" class="card-img-top transition" alt="">
-              </div>
-              <div class="card-body p-0 py-4">
-                <div class="b-title row">
-                
-                </div>
-                <a href="#" class="card-text white-600">Beauty Camera | Selfie Camera: Polish<i class="fa-solid ps-3 red-900"></i></a>
-              </div>
+        </button>
+      </div>
+
+    <div class="modal fade col-7" id="myModal3" role="dialog3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h2 class="modal-title white-600" id="myModalLabel">Beauty Camera | Sweet Camera: Polish</h2>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
             </div>
-          </div>
-         
-          <div class="col-4">
-            <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
-              <div class="img overflow-hidden border-radius-10">
-                <img src="image//section-4/4.png" class="card-img-top transition" alt="">
-              </div>
-              <div class="card-body p-0 py-4">
-                <div class="b-title row">
-                  
+            <div class="modal-body border-0">
+                <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
+                <div class="col-12 d-flex justify-content-start mb-5">
+                    <div class="d-flex justify-content-start">
+                        <div class="col-2 text-white m-0">
+                            <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                        </div>
+                        <div class="col-2 text-white m-0">
+                            <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                        </div>
+                        <div class="col-2 text-white">
+                            <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                        </div>
+                        <div class="col-2 text-white">
+                            <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                        </div>
+                        <div class="col-2 text-white">
+                            <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                        </div>
+                    </div>
+                    <div class="text-white-50">
+                        <h3>2236465 Reviews</h3>
+                    </div>
                 </div>
-                <a href="#" class="card-text white-600">Beauty Camera | Sweet Camera: Polish <i class="fa-solid ps-3 red-900"></i></a>
-              </div>
+                <h4 class="white-600 mt-3">Beauty Camera | Sweet Camera: Polish is an all-in-one camera app and beauty editor designed to help you create stunning photos and video selfies effortlessly. This comprehensive app provides everything you need, from fashion makeup and stickers to face and body retouching, all enhanced by advanced AI beauty technology. With Beauty Camera, you can enjoy a seamless photo and video editing experience, perfect for generating unique, sweet, and beautiful images.</h4>
+                <br>
+                <h4 class="white-600">Whether you're looking to capture the perfect selfie or enhance your photos, the Selfie Camera & Beauty Camera feature offers top-notch makeup effects, access to top-brand beauty products, and an array of cute AR stickers, filters, watermarks, and fonts. You can even create amazing collages and explore custom beauty effects to discover your favorite version of yourself. Features like smooth skin, face reshaping, teeth whitening, hair color changing, and more, allow you to personalize your look with ease. Experiment with costume makeup, eyeliner, eyelashes, contour, blush, and even try on different contact lenses to change your eye color or reshape your eyes for a more dramatic effect.
+                </h4>
+                <br>
+                <h4 class="white-600">The app is available for free download, offering all these powerful features at no cost. Don't miss out on this popular, professional-grade beauty camera and photo/video editing app. Snap sweet selfies, edit short videos, and share them with just one tap across all your favorite social media platforms!
+                </h4>
+                <br>
             </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+          <!-- 4 -->
+        <div class="col-4">
+          <button type="button" class="box-btn" id="cust_btn_4" data-toggle="modal" data-target="#myModal4">
+              <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
+                  <div class="img overflow-hidden border-radius-10">
+                    <img src="image//section-4/2.png" class="card-img-top transition" alt="">
+                  </div>
+                  <div class="card-body p-0 py-4">
+                      <div class="b-title row"></div>
+                      <a href="#" class="card-text white-600">Photo Editor: Polish Anything</a>
+                  </div>
+              </div>
+          </button>
+      </div> 
+    
+      <div class="modal fade col-7" id="myModal4" role="dialog4">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header border-0">
+                  <h2 class="modal-title white-600" id="myModalLabel">Photo Editor: Polish Anything </h2>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
+              </div>
+              <div class="modal-body border-0">
+                  <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
+                  <div class="col-12 d-flex justify-content-start mb-5">
+                      <div class="d-flex justify-content-start">
+                          <div class="col-2 text-white m-0">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                          <div class="col-2 text-white m-0">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                          <div class="col-2 text-white">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                          <div class="col-2 text-white">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                          <div class="col-2 text-white">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                      </div>
+                      <div class="text-white-50">
+                          <h3>2236465 Reviews</h3>
+                      </div>
+                  </div>
+                  <h4 class="white-600 mt-3">Photo Editor: Polish Anything offers a thoughtfully designed photo editing experience, blending the most professional technology with an intuitive interface. Explore the magic of photo editing and unlock your creativity to edit pictures like a pro!</h4>
+                  <br>
+                  <h4 class="white-600">Features to Elevate Your Photos Extensive Collection of Filters and Effects: Choose from countless filters, fonts, and stickers, including neon, drip, light FX, glitch, and more.Stunning Effects: Dive into dazzling effects that will make your photos stand out.Creative Collages: Easily create photo collages with a variety of layouts and templates.Advanced Beauty Tools: Enhance your photos with face beauty, body retouch, cutout, and background blur features.
+                  </h4>
+                  <br>
+                  <h4 class="white-600">Why Photo Editor: Polish Anything Stands Out User-Friendly Interface: Experience seamless editing with our intuitive and easy-to-navigate design.Professional Quality: Leverage cutting-edge technology to create professional-grade photo edits.High Download Numbers: Join over 1 million users who have trusted Photo Editor: Polish Anything on Google Play and App Store.
+                  </h4>
+                  <br>
+                  <h4 class="white-600">Share Your Creations Direct Sharing: Post your masterpieces directly to Instagram, WhatsApp, Facebook, and more without any hassle.
+                  </h4>
+                  <br>
+                  <h4 class="white-600">Download the best photo editor today and transform your photos into captivating artworks with Photo Editor: Polish Anything!</h4>
+                  <br>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+              </div>
           </div>
+      </div>
+    </div>
+        
+        <!-- 5 -->
           <div class="col-4">
-            <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
-              <div class="img overflow-hidden border-radius-10">
-                <img src="image//section-4/2.png" class="card-img-top transition" alt="">
-              </div>
-              <div class="card-body p-0 py-4">
-                <div class="b-title row">
-                  
+            <button type="button" id="cust_btn_5" class="box-btn" data-toggle="modal" data-target="#myModal5">
+                <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
+                    <div class="img overflow-hidden border-radius-10">
+                      <img src="image//section-4/5.png" class="card-img-top transition" alt="">
+                    </div>
+                    <div class="card-body p-0 py-4">
+                        <div class="b-title row"></div>
+                        <a href="#" class="card-text white-600">Beauty Camera: Selfie, Sticker<i class="fa-solid ps-3 red-900"></i></a>
+                    </div>
                 </div>
-                <a href="#" class="card-text white-600">Photo Editor: Polish Anything <i class="fa-solid ps-3 red-900"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
-              <div class="img overflow-hidden border-radius-10">
-                <img src="image//section-4/5.png" class="card-img-top transition" alt="">
-              </div>
-              <div class="card-body p-0 py-4">
-                <div class="b-title row">
-                  
+            </button>
+        </div>
+    
+        <div class="modal fade col-7" id="myModal5" role="dialog5">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h2 class="modal-title white-600" id="myModalLabel">Beauty Camera: Selfie, Sticker</h2>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
                 </div>
-                <a href="#" class="card-text white-600">Beauty Camera: Selfie, Sticker<i class="fa-solid ps-3 red-900"></i></a>
-              </div>
+                <div class="modal-body border-0">
+                    <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
+                    <div class="col-12 d-flex justify-content-start mb-5">
+                        <div class="d-flex justify-content-start">
+                            <div class="col-2 text-white m-0">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                            <div class="col-2 text-white m-0">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                            <div class="col-2 text-white">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                            <div class="col-2 text-white">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                            <div class="col-2 text-white">
+                                <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                            </div>
+                        </div>
+                        <div class="text-white-50">
+                            <h3>2236465 Reviews</h3>
+                        </div>
+                    </div>
+                    <h4 class="white-600 mt-3">Beauty Camera | Sweet Camera: Polish is an all-in-one camera app and beauty editor designed to help you create stunning photos and video selfies effortlessly. This comprehensive app provides everything you need, from fashion makeup and stickers to face and body retouching, all enhanced by advanced AI beauty technology. With Beauty Camera, you can enjoy a seamless photo and video editing experience, perfect for generating unique, sweet, and beautiful images.</h4>
+                    <br>
+                    <h4 class="white-600">Whether you're looking to capture the perfect selfie or enhance your photos, the Selfie Camera & Beauty Camera feature offers top-notch makeup effects, access to top-brand beauty products, and an array of cute AR stickers, filters, watermarks, and fonts. You can even create amazing collages and explore custom beauty effects to discover your favorite version of yourself. Features like smooth skin, face reshaping, teeth whitening, hair color changing, and more, allow you to personalize your look with ease. Experiment with costume makeup, eyeliner, eyelashes, contour, blush, and even try on different contact lenses to change your eye color or reshape your eyes for a more dramatic effect.
+                    </h4>
+                    <br>
+                    <h4 class="white-600">The app is available for free download, offering all these powerful features at no cost. Don't miss out on this popular, professional-grade beauty camera and photo/video editing app. Snap sweet selfies, edit short videos, and share them with just one tap across all your favorite social media platforms!
+                    </h4>
+                    <br>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+                </div>
             </div>
+        </div>
+        </div>
+
+           
+        <!-- 6 -->
+        <div class="col-4">
+          <button type="button" id="cust_btn_6" class="box-btn" data-toggle="modal" data-target="#myModal6">
+              <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
+                  <div class="img overflow-hidden border-radius-10">
+                    <img src="image//section-4/6.png" class="card-img-top transition" alt="">
+                  </div>
+                  <div class="card-body p-0 py-4">
+                      <div class="b-title row"></div>
+                      <a href="#" class="card-text white-600">Photo Editor | Beauty Camera<i class="fa-solid ps-3 red-900"></i></a>
+                  </div>
+              </div>
+          </button>
+      </div>
+  
+      <div class="modal fade col-7" id="myModal6" role="dialog6">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header border-0">
+                  <h2 class="modal-title white-600" id="myModalLabel">Photo Editor | Beauty Camera</h2>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
+              </div>
+              <div class="modal-body border-0">
+                  <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
+                  <div class="col-12 d-flex justify-content-start mb-5">
+                      <div class="d-flex justify-content-start">
+                          <div class="col-2 text-white m-0">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                          <div class="col-2 text-white m-0">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                          <div class="col-2 text-white">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                          <div class="col-2 text-white">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                          <div class="col-2 text-white">
+                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
+                          </div>
+                      </div>
+                      <div class="text-white-50">
+                          <h3>2236465 Reviews</h3>
+                      </div>
+                  </div>
+                  <h4 class="white-600 mt-3">Beauty Camera | Sweet Camera: Polish is an all-in-one camera app and beauty editor designed to help you create stunning photos and video selfies effortlessly. This comprehensive app provides everything you need, from fashion makeup and stickers to face and body retouching, all enhanced by advanced AI beauty technology. With Beauty Camera, you can enjoy a seamless photo and video editing experience, perfect for generating unique, sweet, and beautiful images.</h4>
+                  <br>
+                  <h4 class="white-600">Whether you're looking to capture the perfect selfie or enhance your photos, the Selfie Camera & Beauty Camera feature offers top-notch makeup effects, access to top-brand beauty products, and an array of cute AR stickers, filters, watermarks, and fonts. You can even create amazing collages and explore custom beauty effects to discover your favorite version of yourself. Features like smooth skin, face reshaping, teeth whitening, hair color changing, and more, allow you to personalize your look with ease. Experiment with costume makeup, eyeliner, eyelashes, contour, blush, and even try on different contact lenses to change your eye color or reshape your eyes for a more dramatic effect.
+                  </h4>
+                  <br>
+                  <h4 class="white-600">The app is available for free download, offering all these powerful features at no cost. Don't miss out on this popular, professional-grade beauty camera and photo/video editing app. Snap sweet selfies, edit short videos, and share them with just one tap across all your favorite social media platforms!
+                  </h4>
+                  <br>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+              </div>
           </div>
+      </div>
+      </div>
   
         </div>
       </div>
@@ -498,7 +885,7 @@ My key interests include software engineering, marketing management, human resou
                                 <div class="box bg-bs border-radius-10 text-center position-relative overflow-hidden">
                                   <div class="content">
                                     <div class="img py-5 align-items-center d-flex justify-content-center">
-                                    <img src="image/section-7/aspnet.svg"  width="20%"alt="">
+                                    <img src="image/section-7/asp.net.svg"  width="20%"alt="">
                                   </div>
                                   <h6 class="p-4">ASP.net </h6>
                                   </div>
@@ -902,7 +1289,7 @@ My key interests include software engineering, marketing management, human resou
         <div class="col-8 px-5 p-3">
           <form  class="row g-3 p-5" id="contact-form">
             <div class="col-md-6 pe-4 py-3">
-                <label for="firstName" class="form-label text-white-50 pb-2">First Name</label>
+                <label for="firstName" class="form-label text-white-50 pb-2">Full Name</label>
                 <input type="text" class="form-control p-4 border-radius-10" id="firstName" name="firstName" required>
             </div>
             <div class="col-md-6 py-3">
@@ -1026,10 +1413,10 @@ My key interests include software engineering, marketing management, human resou
       const templateParams = {
         firstName: firstName,
         phoneNumber: phoneNumber,
-          email: email,
+        email: email,
           message: message
       };
-      emailjs.send('service_988nm5i', 'template_qwufnu7', templateParams)
+      emailjs.send('service_cws6f5d', 'template_mdsdfrr', templateParams)
       .then(function(response) {
           alert('Message sent successfully!');
           console.log('SUCCESS!', response.status, response.text);
@@ -1039,6 +1426,7 @@ My key interests include software engineering, marketing management, human resou
       });
   });
 </script>
+
 
 <!-- smtpJS -->
 <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
