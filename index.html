@@ -32,17 +32,11 @@
 
 
 <!-- dialog box -->
-
-<!-- <script type="module" src="https://cdn.jsdelivr.net/npm/jolty@0.6.2/dist/jolty.esm.min.js"></script> -->
-
-<!-- <link rel="stylesheet" href="https://maxcdn.boo tstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-<!-- jQuery and Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script>
@@ -63,58 +57,54 @@ $(document).on("click","#cust_btn_4",function(){
     $("#myModal5").modal("toggle");
 });
 </script>
-<!-- <script type="module">
-  import { Dialog } from 'https://cdn.jsdelivr.net/npm/jolty@0.6.2/dist/jolty.esm.min.js';
 
-  document.addEventListener("DOMContentLoaded", () => {
-    // Initialize all dialogs
-    Dialog.initAll();
-
-    // Get the specific dialog and set up the event listener
-    const dialog = Dialog.get("dialog-cats-or-dogs");
-    if (dialog) {
-      dialog.on("show", ({ base }, { trigger }) => {
-        const outputElement = base.querySelector("[data-output]");
-        if (outputElement && trigger.dataset.whatever) {
-          outputElement.textContent = trigger.dataset.whatever;
-        }
+<!-- header li a -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll("nav a");
+  
+      navLinks.forEach(link => {
+          link.addEventListener("click", function () {
+              navLinks.forEach(nav => nav.classList.remove("active"));
+              this.classList.add("active");
+          });
       });
-    }
   });
-</script> -->
+</script>
 </head>
 
 <body class="body-color">
+
   <!-- header -->
-  <nav class="navbar navbar-expand-lg py-2 position-sticky top-0">
+  <nav class="navbar navbar-expand-lg py-3 position-sticky top-0">
     <div class="container">
-      <p class="navbar-brand header-name" href="#">Milan Dodiya</p>
+        <p class="navbar-brand header-name" href="#">Milan Dodiya</p>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item p-3">
-            <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
-          </li>
-          <li class="nav-item p-3">
-            <a class="nav-link text-white-50" aria-current="page" href="#features">ABOUT</a>
-          </li>
-          <li class="nav-item p-3">
-            <a class="nav-link text-white-50" aria-current="page" href="#gallery">PORTFOLIO</a>
-          </li>
-          <li class="nav-item p-3">
-            <a class="nav-link text-white-50" aria-current="page" href="#resume">RESUME</a>
-          </li>
-          <li class="nav-item p-3">
-            <a class="nav-link text-white-50" aria-current="page" href="#testimonial">TESTIMONIAL</a>
-          </li>
-
-          <li class="nav-item p-3">
-            <a class="nav-link text-white-50" aria-current="page" href="#contact">CONTACT</a>
-          </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item p-3">
+                    <a class="nav-link text-white-50 " aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link text-white-50" href="#features">ABOUT</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link text-white-50" href="#gallery">PORTFOLIO</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link text-white-50" href="#resume">RESUME</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link text-white-50" href="#testimonial">TESTIMONIAL</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link text-white-50" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
     </div>
   </nav>
+
   <!-- banner -->
   <section class="banner">
     <div class="container">
@@ -174,6 +164,7 @@ $(document).on("click","#cust_btn_4",function(){
       </div>
     </div>
   </section>
+
   <!-- Service -->
   <section class="features" id="features">
     <div class="container border-start-0 border-end-0">
@@ -227,6 +218,7 @@ My key interests include software engineering, marketing management, human resou
       </div>
     </div>
   </section>
+
   <!-- gallery -->
   <section class="gallery" id="gallery">
     <div class="container">
@@ -585,6 +577,7 @@ My key interests include software engineering, marketing management, human resou
       </div>
     </div>
   </section>
+
   <!-- resume -->
   <section class="resume" id="resume">
     <div class="container">
@@ -613,18 +606,17 @@ My key interests include software engineering, marketing management, human resou
 
           <li class="col-3 nav-item" role="presentation">
             <button class="nav-link p-5 border-0" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience"
-              type="button" role="tab" aria-controls="experience" aria-selected="false">Experience</button>
+              type="button" role="tab" aria-controls="experience" aria-selected="false">Work Experience</button>
           </li>
         </ul>
         
         <div class="tab-content" id="myTabContent">
         
            <!-- interview -->
-           <div class="tab-pane fade show active" id="interview" role="tabpanel" aria-labelledby="interview-tab">
+           <div class="tab-pane fade show active" id="interview" role="tabpanel" aria-labelledby="interview-tab"> 
             <div class="row">
               <div class="col-8 pe-5">
                 <div class="title py-5">
-                  <h2 class="white-600">Personal Details </h2>
                 </div>
               
                   <div class="r-bodysss my-5">
@@ -677,18 +669,16 @@ My key interests include software engineering, marketing management, human resou
             <div class="row">
               <div class="col-6 pe-5">
                 <div class="title py-5">
-                  <h2 class="white-600">BCA Education Education </h2>
                 </div>
                 <div class="resume-body ">
                   <div class="r-body my-5">
                     <div class="box">
                       <div class="b-title align-items-center row py-5">
-                        <div class="col-9 p-0">
-                          <h3 class="text-light">BCA in Computer Science</h3>
-                          <h6 class="text-white-50">University of DVI (2006 - 2010)</h6>
+                        <div class="col-12 p-0">
+                          <h3 class="text-light">Bachelor Of Computer Application(BCA)  </h3>
+                          <h6 class="text-white-50">University of GTU (2015-2018)</h6>
                         </div>
-                        <div class="col-3 justify-content-end d-flex">
-                        </div>
+                      
                       </div>
                       <p class="py-3 text-white-50">
                         BCA covers a range of topics, including programming languages, database management, networking, web development, software engineering, data structures, and computer architecture.
@@ -712,7 +702,7 @@ My key interests include software engineering, marketing management, human resou
                       <div class="col-4 position-sticky client-main px-4">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                           <!-- Web development -->
-                          <button class="nav-link bg-transparent p-5" id="v-pills-java-tab" data-bs-toggle="pill"
+                          <button class="nav-link bg-transparent p-5 active" id="v-pills-java-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-java" type="button" role="tab" aria-controls="v-pills-java"
                             aria-selected="false">Web Development</button>
 
@@ -1011,9 +1001,9 @@ My key interests include software engineering, marketing management, human resou
             <!-- experience -->
             <div class="tab-pane fade experience" id="experience" role="tabpanel" aria-labelledby="experience-tab">
             <div class="row title ">
-              <h2 class="white-600 mb-3">Work Experience</h2>
-              <h4 class="text-white-50 experience-text">Our mission is to deliver optimal solutions with a focus on quality and client satisfaction while fostering an open and friendly culture. We aim to manage client relationships effectively, retaining existing clients and expanding our network. By continuously exploring new ideas, we strive to improve the quality of our services.</h4>
               <div class="col-12">
+                <div class="title py-5">
+                </div>
                   <div class="r-bodyss col-12  d-flex justify-content-between justify-content-center align-items-center text-white">
                   
                       <div class="col-3 d-flex justify-content-center align-items-center" >
@@ -1045,20 +1035,16 @@ My key interests include software engineering, marketing management, human resou
                             </div>
                              </div>
                     </div>
-
-                   
-             
-              
                 </div>
               </div>
              
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </section>
+
   <!-- Testimonial -->
   <section class="testimonial" id="testimonial">
     <div class="container border-end-0 border-start-0">
@@ -1258,6 +1244,7 @@ My key interests include software engineering, marketing management, human resou
       </div>
     </div>
   </section>
+
   <!-- footer -->
   <footer>
     <div class="container border-end-0 border-start-0">
@@ -1305,12 +1292,12 @@ My key interests include software engineering, marketing management, human resou
         </div>
         <div class="col-3">
           <div class="data">
-            <h6 class="pb-3 red-900">Details</h6>
+            <h6 class="pb-3 red-900">Quick Contact</h6>
             <ul>
               <li class="py-2"> 
-                <h3 class="text-white"><span class="text-white-50 m-0 d-block py-1"><i class="fa-solid fa-location-dot me-3"></i><a href="#" class="">417, 4th Floor, Escon Plaza,Chhaprabhatha Road, Amroli, Surat Gujarat 394107.</a></span></h3></li>
-              <li class="py-2">  <h3> <span class="card-text text-white-50 m-0 d-block py-1"><i class="fa-solid fa-phone me-3"></i><a href="#" class="">+91 966-2165-636</a></span></h3> </li>
-              <li class="py-2"><h3> <span class="card-text text-white-50 m-0 d-block py-1"><i class="fa-solid fa-envelope me-3"></i> <a href="#" class="">contact@milandodiya.com</a></span></h3></li>
+                <h3 class="text-white"><span class="text-white-50 m-0 d-block py-1"><i class="fa-solid fa-location-dot me-3"></i>417, 4th Floor, Escon Plaza,Chhaprabhatha Road, Amroli, Surat Gujarat 394107.</span></h3></li>
+              <li class="py-2">  <h3> <span class="card-text text-white-50 m-0 d-block py-1"><i class="fa-solid fa-phone me-3"></i>+91 966-2165-636</span></h3> </li>
+              <li class="py-2"><h3> <span class="card-text text-white-50 m-0 d-block py-1"><i class="fa-solid fa-envelope me-3"></i>contact@milandodiya.com</span></h3></li>
             </ul>
           </div>
         </div>
@@ -1318,6 +1305,8 @@ My key interests include software engineering, marketing management, human resou
       </div>
     </div>
   </footer>
+
+  <!-- footer lines -->
   <section class="line py-5">
     <div class="container">
       <div class="row">
@@ -1327,16 +1316,13 @@ My key interests include software engineering, marketing management, human resou
   </section>
 
   <script src="js/JQuery.min.js"></script>
-
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- <script src="js/popper.min.js"></script> -->
-
     <script src="js/healine-modernizr.js"></script>
     <script src="js/headine-jquery-2.1.1.js"></script>
     <script src="js/headline-main.js"></script>
     <script src="js/wow.min.js"></script>
-
     <script>
     new WOW().init();
   </script>
@@ -1344,7 +1330,7 @@ My key interests include software engineering, marketing management, human resou
 
   <!-- EmailJS -->
   <script type="text/javascript">
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault(); 
 
       const firstName = document.getElementById('firstName').value;
@@ -1368,52 +1354,4 @@ My key interests include software engineering, marketing management, human resou
       });
   });
 </script>
-
-
-<!-- smtpJS -->
-<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script type="text/javascript">
-    function sendemail(event) {
-        event.preventDefault(); // Prevents the form from reloading the page
-
-        console.log("okok");
-
-        // Collect form data
-        var firstName = document.getElementById("firstName").value;
-        var phoneNumber = document.getElementById("phoneNumber").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
-
-        // Log form data for debugging purposes
-        console.log("Sending email...");
-        console.log("From: " + email);
-        console.log("Subject: " + subject);
-        console.log("Message: " + message);
-
-        // Send email using SMTP.js
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "7952rutamavani@gmail.com",  // Replace with your actual username
-            Password: "F7622856EF00A74E988881E18FD4557149D4",  // Replace with your actual password
-            To: 'rutamavani01@gmail.com',  // Replace with your receiving email
-            From: email,  // Email entered by the user
-            Subject: subject,
-            Body: `
-            <h3>New Contact Form Submission</h3>
-            <p><strong>Name:</strong> ${firstName}</p>
-            <p><strong>Phone Number:</strong> ${phoneNumber}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Message:</strong> ${message}</p>
-        `
-        }).then(function (response) {
-            console.log("Email sent successfully:", response);
-            alert("Message sent successfully!");
-        }).catch(function (error) {
-            console.error("Failed to send email:", error);
-            alert("Failed to send the message. Please try again later.");
-        });
-    }
-</script> -->
-
 </html>
