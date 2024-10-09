@@ -42,7 +42,11 @@
 .modal-footer button, .modal-header button{
     background: linear-gradient(to right bottom, #212428, #16181c);
     color: white;
-    padding: 4px 12px;
+    padding: 1px 9px;
+    border-radius: 6px;
+}
+.experience-text{
+    margin-bottom:40px;
 }
 .ui-btn-close {
     width: 20%;

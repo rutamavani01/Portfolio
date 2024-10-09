@@ -35,7 +35,7 @@
 
 <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/jolty@0.6.2/dist/jolty.esm.min.js"></script> -->
 
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" href="https://maxcdn.boo tstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 <!-- jQuery and Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -61,13 +61,6 @@ $(document).on("click","#cust_btn_4",function(){
   });
   $(document).on("click", "#cust_btn_5", function() {
     $("#myModal5").modal("toggle");
-});
-$(document).on("click", "#cust_btn_6", function() {
-    $("#myModal6").modal("toggle");
-});
-$('#myModal').on('hidden.bs.modal', function () {
-    $('body').removeClass('modal-open');
-    $('.modal-backdrop').remove();
 });
 </script>
 <!-- <script type="module">
@@ -244,7 +237,7 @@ My key interests include software engineering, marketing management, human resou
         <div class="col-12 row justify-content-center g-5 m-0">
           <!-- 1 -->
           <div class="col-md-4">
-            <button type="button" id="cust_btn_1" class="box-btn" data-toggle="modal" data-target="#myModal">
+            <button type="button" id="cust_btn_1" class="box-btn" data-target="#myModal">
                 <div class="card p-5 w-100 bg-bs border-radius-10 white-600">
                     <div class="img overflow-hidden border-radius-10">
                         <img src="image/section-4/1.png" class="card-img-top transition" alt="Collage Maker">
@@ -265,8 +258,8 @@ My key interests include software engineering, marketing management, human resou
               <div class="modal-content">
                   <div class="modal-header border-0">
                       <h2 class="modal-title white-600" id="myModalLabel">Collage Maker | Photo Editor: Make Anything</h2>
-                      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
-                  </div>
+                      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><h2>&times;</h2></button>
+                    </div>
                   <div class="modal-body border-0">
                       <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
                       <div class="col-12 d-flex justify-content-start mb-5">
@@ -300,21 +293,21 @@ My key interests include software engineering, marketing management, human resou
                       <br>
                   </div>
                   <div class="modal-footer border-0">
-                      <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+                      <!-- <button type="button" class="btn btn-default" data-bs-dismiss="modal"><h4>Close</h4></button> -->
                   </div>
               </div>
           </div>
       </div>
           <!-- 2 -->
           <div class="col-4">
-            <button type="button" id="cust_btn_2" class="box-btn" data-toggle="modal2" data-target="#myModal2">
+            <button type="button" id="cust_btn_2" class="box-btn"  data-target="#myModal2">
               <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
                 <div class="img overflow-hidden border-radius-10">
                   <img src="image/section-4/3.png" class="card-img-top transition" alt="">
                 </div>
                 <div class="card-body p-0 py-4">
                   <div class="b-title row"></div>
-                  <a href="#" class="card-text white-600">
+                  <a href="#gallery" class="card-text white-600">
                     Beauty Camera | Selfie Camera: Polish
                     <i class="fa-solid ps-3 red-900"></i>
                   </a>
@@ -328,7 +321,7 @@ My key interests include software engineering, marketing management, human resou
             <div class="modal-content">
                 <div class="modal-header border-0">
                     <h2 class="modal-title white-600" id="myModalLabel">Beauty Camera | Selfie Camera: Polish</h2>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><h2>&times;</h2></button>
                 </div>
                 <div class="modal-body border-0">
                     <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
@@ -377,21 +370,21 @@ My key interests include software engineering, marketing management, human resou
                     <br>
                 </div>
                 <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+                    <!-- <button type="button" class="btn btn-default" data-bs-dismiss="modal"><h4>Close</h4></button> -->
                 </div>
             </div>
         </div>
         </div>
         <!-- 3 -->
       <div class="col-4">
-        <button type="button" id="cust_btn_3" class="box-btn" data-toggle="modal" data-target="#myModal3">
+        <button type="button" id="cust_btn_3" class="box-btn"  data-target="#myModal3">
           <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
             <div class="img overflow-hidden border-radius-10">
               <img src="image//section-4/4.png" class="card-img-top transition" alt="">
             </div>
             <div class="card-body p-0 py-4">
               <div class="b-title row"></div>
-              <a href="#" class="card-text white-600">Beauty Camera | Sweet Camera: Polish</a>
+              <a href="#gallery" class="card-text white-600">Beauty Camera | Sweet Camera: Polish</a>
             </div>
           </div>
         </button>
@@ -402,8 +395,8 @@ My key interests include software engineering, marketing management, human resou
         <div class="modal-content">
             <div class="modal-header border-0">
                 <h2 class="modal-title white-600" id="myModalLabel">Beauty Camera | Sweet Camera: Polish</h2>
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
-            </div>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><h2>&times;</h2></button>
+              </div>
             <div class="modal-body border-0">
                 <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
                 <div class="col-12 d-flex justify-content-start mb-5">
@@ -438,7 +431,7 @@ My key interests include software engineering, marketing management, human resou
                 <br>
             </div>
             <div class="modal-footer border-0">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+                <!-- <button type="button" class="btn btn-default"data-bs-dismiss="modal""><h4>Close</h4></button> -->
             </div>
         </div>
     </div>
@@ -446,14 +439,14 @@ My key interests include software engineering, marketing management, human resou
 
           <!-- 4 -->
         <div class="col-4">
-          <button type="button" class="box-btn" id="cust_btn_4" data-toggle="modal" data-target="#myModal4">
+          <button type="button" class="box-btn" id="cust_btn_4"  data-target="#myModal4">
               <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
                   <div class="img overflow-hidden border-radius-10">
                     <img src="image//section-4/2.png" class="card-img-top transition" alt="">
                   </div>
                   <div class="card-body p-0 py-4">
                       <div class="b-title row"></div>
-                      <a href="#" class="card-text white-600">Photo Editor: Polish Anything</a>
+                      <a href="#gallery" class="card-text white-600">Photo Editor: Polish Anything</a>
                   </div>
               </div>
           </button>
@@ -464,8 +457,8 @@ My key interests include software engineering, marketing management, human resou
           <div class="modal-content">
               <div class="modal-header border-0">
                   <h2 class="modal-title white-600" id="myModalLabel">Photo Editor: Polish Anything </h2>
-                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
-              </div>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><h2>&times;</h2></button>
+                </div>
               <div class="modal-body border-0">
                   <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
                   <div class="col-12 d-flex justify-content-start mb-5">
@@ -505,7 +498,7 @@ My key interests include software engineering, marketing management, human resou
                   <br>
               </div>
               <div class="modal-footer border-0">
-                  <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+                  <!-- <button type="button" class="btn btn-default" data-bs-dismiss="modal"><h4>Close</h4></button> -->
               </div>
           </div>
       </div>
@@ -513,14 +506,14 @@ My key interests include software engineering, marketing management, human resou
         
         <!-- 5 -->
           <div class="col-4">
-            <button type="button" id="cust_btn_5" class="box-btn" data-toggle="modal" data-target="#myModal5">
+            <button type="button" id="cust_btn_5" class="box-btn"  data-target="#myModal5">
                 <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
                     <div class="img overflow-hidden border-radius-10">
                       <img src="image//section-4/5.png" class="card-img-top transition" alt="">
                     </div>
                     <div class="card-body p-0 py-4">
                         <div class="b-title row"></div>
-                        <a href="#" class="card-text white-600">Beauty Camera: Selfie, Sticker<i class="fa-solid ps-3 red-900"></i></a>
+                        <a href="#gallery" class="card-text white-600">Beauty Camera: Selfie, Sticker<i class="fa-solid ps-3 red-900"></i></a>
                     </div>
                 </div>
             </button>
@@ -531,7 +524,7 @@ My key interests include software engineering, marketing management, human resou
             <div class="modal-content">
                 <div class="modal-header border-0">
                     <h2 class="modal-title white-600" id="myModalLabel">Beauty Camera: Selfie, Sticker</h2>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><h2>&times;</h2></button>
                 </div>
                 <div class="modal-body border-0">
                     <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
@@ -567,73 +560,25 @@ My key interests include software engineering, marketing management, human resou
                     <br>
                 </div>
                 <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
+                    <!-- <button type="button" class="btn btn-default"data-bs-dismiss="modal"><h4>Close</h4></button> -->
                 </div>
             </div>
         </div>
         </div>
-
-           
+       
         <!-- 6 -->
         <div class="col-4">
-          <button type="button" id="cust_btn_6" class="box-btn" data-toggle="modal" data-target="#myModal6">
-              <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
-                  <div class="img overflow-hidden border-radius-10">
+          <div class="card p-5 w-100 bg-bs border-radius-10 white-600" style="width: 18rem;">
+            <div class="img overflow-hidden border-radius-10">
+                    <a href="https://photoeditorbeautycamera.com/" target="_blank">
                     <img src="image//section-4/6.png" class="card-img-top transition" alt="">
                   </div>
                   <div class="card-body p-0 py-4">
                       <div class="b-title row"></div>
-                      <a href="#" class="card-text white-600">Photo Editor | Beauty Camera<i class="fa-solid ps-3 red-900"></i></a>
+                      <a href="https://photoeditorbeautycamera.com/" target="_blank" class="card-text white-600">Photo Editor | Beauty Camera<i class="fa-solid ps-3 red-900"></i></a>
+                    </a>
                   </div>
               </div>
-          </button>
-      </div>
-  
-      <div class="modal fade col-7" id="myModal6" role="dialog6">
-        <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header border-0">
-                  <h2 class="modal-title white-600" id="myModalLabel">Photo Editor | Beauty Camera</h2>
-                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button> -->
-              </div>
-              <div class="modal-body border-0">
-                  <img class="mb-5 img-responsive" src="./image/section-4/1.png" alt="Collage Maker Image">
-                  <div class="col-12 d-flex justify-content-start mb-5">
-                      <div class="d-flex justify-content-start">
-                          <div class="col-2 text-white m-0">
-                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
-                          </div>
-                          <div class="col-2 text-white m-0">
-                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
-                          </div>
-                          <div class="col-2 text-white">
-                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
-                          </div>
-                          <div class="col-2 text-white">
-                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
-                          </div>
-                          <div class="col-2 text-white">
-                              <img src="./image/section-4/start.png" width="50%" alt="Feature Icon">
-                          </div>
-                      </div>
-                      <div class="text-white-50">
-                          <h3>2236465 Reviews</h3>
-                      </div>
-                  </div>
-                  <h4 class="white-600 mt-3">Beauty Camera | Sweet Camera: Polish is an all-in-one camera app and beauty editor designed to help you create stunning photos and video selfies effortlessly. This comprehensive app provides everything you need, from fashion makeup and stickers to face and body retouching, all enhanced by advanced AI beauty technology. With Beauty Camera, you can enjoy a seamless photo and video editing experience, perfect for generating unique, sweet, and beautiful images.</h4>
-                  <br>
-                  <h4 class="white-600">Whether you're looking to capture the perfect selfie or enhance your photos, the Selfie Camera & Beauty Camera feature offers top-notch makeup effects, access to top-brand beauty products, and an array of cute AR stickers, filters, watermarks, and fonts. You can even create amazing collages and explore custom beauty effects to discover your favorite version of yourself. Features like smooth skin, face reshaping, teeth whitening, hair color changing, and more, allow you to personalize your look with ease. Experiment with costume makeup, eyeliner, eyelashes, contour, blush, and even try on different contact lenses to change your eye color or reshape your eyes for a more dramatic effect.
-                  </h4>
-                  <br>
-                  <h4 class="white-600">The app is available for free download, offering all these powerful features at no cost. Don't miss out on this popular, professional-grade beauty camera and photo/video editing app. Snap sweet selfies, edit short videos, and share them with just one tap across all your favorite social media platforms!
-                  </h4>
-                  <br>
-              </div>
-              <div class="modal-footer border-0">
-                  <button type="button" class="btn btn-default" data-dismiss="modal"><h4>Close</h4></button>
-              </div>
-          </div>
-      </div>
       </div>
   
         </div>
@@ -1065,9 +1010,9 @@ My key interests include software engineering, marketing management, human resou
 
             <!-- experience -->
             <div class="tab-pane fade experience" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-            <div class="row title">
+            <div class="row title ">
               <h2 class="white-600 mb-3">Work Experience</h2>
-              <h4 class="text-white mb-5">Our mission is to deliver optimal solutions with a focus on quality and client satisfaction while fostering an open and friendly culture. We aim to manage client relationships effectively, retaining existing clients and expanding our network. By continuously exploring new ideas, we strive to improve the quality of our services.</h4>
+              <h4 class="text-white-50 experience-text">Our mission is to deliver optimal solutions with a focus on quality and client satisfaction while fostering an open and friendly culture. We aim to manage client relationships effectively, retaining existing clients and expanding our network. By continuously exploring new ideas, we strive to improve the quality of our services.</h4>
               <div class="col-12">
                   <div class="r-bodyss col-12  d-flex justify-content-between justify-content-center align-items-center text-white">
                   
