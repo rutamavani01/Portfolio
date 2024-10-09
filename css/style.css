@@ -340,6 +340,9 @@ nav li:hover a {
 .icon {
     padding-top: 100px;
 }
+.review{
+    margin: 12px 0px 2px 22px;
+}
 
 .banner .content h6 {
     font-size: 60px;
